@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tomas touceda</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fafafa;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .container {
+            max-width: 550px;
+            position: relative;
+            transform: rotate(-0.2deg);
+            text-align: center;
+        }
+
+        .header {
+            margin-bottom: 3.1rem;
+            transform: rotate(0.4deg);
+            margin-left: 1.3rem;
+        }
+
+        h1 {
+            font-size: 0.85rem;
+            font-weight: 300;
+            color: #666;
+            text-transform: lowercase;
+            letter-spacing: 0.1em;
+            background-color: #f5f5f5;
+            padding: 0.2rem 0.4rem;
+            display: inline-block;
+            border-left: 2px solid #e8e8e8;
+        }
+
+        .main-text {
+            font-size: 1.3rem;
+            line-height: 1.5;
+            color: #333;
+            text-align: justify;
+            transform: rotate(0.1deg);
+            font-weight: 400;
+            margin-left: -0.7rem;
+        }
+
+        .word-highlight-1 { background-color: #f8f8f8; padding: 0.05rem 0.1rem; }
+        .word-highlight-2 { color: #777; }
+        .word-highlight-3 { background-color: #f5f5f5; padding: 0.05rem 0.1rem; }
+        .word-highlight-4 { border-bottom: 1px solid #ddd; }
+        .word-highlight-5 { background-color: #fafafa; padding: 0.05rem 0.1rem; }
+
+        .punctuation {
+            color: #999;
+        }
+
+        .links {
+            position: fixed;
+            top: 15%;
+            right: 8%;
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+            transform: rotate(2.1deg);
+        }
+
+        .link-item a {
+            display: block;
+            width: 18px;
+            height: 18px;
+            position: relative;
+            text-decoration: none;
+        }
+
+        .github-shape {
+            width: 18px;
+            height: 18px;
+            background-color: #e5e5e5;
+            transform: rotate(45deg);
+            border-radius: 1px;
+        }
+
+        .linkedin-shape {
+            width: 18px;
+            height: 18px;
+            background-color: #e8e8e8;
+            border-radius: 2px;
+            position: relative;
+        }
+
+        .linkedin-shape::after {
+            content: '';
+            position: absolute;
+            top: 6px;
+            left: 6px;
+            width: 6px;
+            height: 6px;
+            background-color: #d5d5d5;
+            border-radius: 1px;
+        }
+
+        .floating-element {
+            position: fixed;
+            bottom: 25%;
+            left: 12%;
+            width: 3px;
+            height: 8px;
+            background-color: #f0f0f0;
+            transform: rotate(-15deg);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                max-width: 90%;
+                transform: rotate(-0.1deg);
+            }
+            
+            .main-text {
+                font-size: 1.1rem;
+                margin-left: -0.3rem;
+            }
+            
+            .header {
+                margin-left: 0.5rem;
+            }
+            
+            .links {
+                top: 10%;
+                right: 5%;
+                gap: 1rem;
+            }
+            
+            .link-item a {
+                width: 16px;
+                height: 16px;
+            }
+            
+            .github-shape, .linkedin-shape {
+                width: 16px;
+                height: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="floating-element"></div>
+    
+    <div class="container">
+        <div class="header">
+            <h1>tomas touceda</h1>
+        </div>
+        
+        <div class="main-text">
+            I <span class="word-highlight-1">have</span> a <span class="word-highlight-2">thing</span> for <span class="word-highlight-3">solving</span> <span class="word-highlight-4">problems</span><span class="punctuation">.</span> <span class="word-highlight-5">Computers</span> are a lot of fun<span class="punctuation">,</span> people are even more fun<span class="punctuation">.</span> Mix them together<span class="punctuation">,</span> and then we are cooking<span class="punctuation">.</span>
+        </div>
+    </div>
+    
+    <div class="links">
+        <div class="link-item">
+            <a href="https://github.com/chiiph" target="_blank" rel="noopener noreferrer">
+                <div class="github-shape"></div>
+            </a>
+        </div>
+        <div class="link-item">
+            <a href="https://linkedin.com/in/touceda" target="_blank" rel="noopener noreferrer">
+                <div class="linkedin-shape"></div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
